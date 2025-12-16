@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-nyheter</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="light.css">
+
+
 </head>
 
 <body>
@@ -35,7 +38,18 @@
             requestAnimationFrame(scroll)
         }
         scroll();
+        function darkfunction() {
+            let element = document.body;
+            element.classList.toggle("light-mode");
+        }
+    </script>
 
+    <button onclick="darkfunction()">⚫/⚪</button>
+    <script>
+        function darkfunction() {
+            let element = document.body;
+            element.classList.toggle("light-mode");
+        }
     </script>
 
     <main>
@@ -109,7 +123,7 @@
                     Libero accusantium illum non amet debitis, totam necessitatibus distinctio aut iure, minima
                     mollitia,
                     minus laboriosam! Dolorem totam autem hic consequatur mollitia ea quae, molestias et magnam atque,
-                    beatae consectetur doloribus. 
+                    beatae consectetur doloribus.
                 </p>
                 <img src="https://www.onceuponachef.com/images/2022/11/baked-potatoes.jpg" alt="">
             </div>
@@ -119,18 +133,24 @@
         </div>
 
         <div class="e-simon">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae in rerum corrupti, laboriosam
-                officia architecto eveniet quasi quaerat, temporibus incidunt excepturi, blanditiis ullam sit quam sunt
-                accusantium mollitia adipisci facere!
-                Est unde, commodi ipsum placeat quasi voluptatibus veritatis blanditiis alias aperiam mollitia adipisci
-                sed aliquid nobis, sit porro id accusantium aspernatur odio! Vero tenetur nesciunt non optio deleniti
-                laboriosam autem?
-                Eaque, quisquam provident. Consequatur veniam possimus, blanditiis odio sit obcaecati, placeat
-                similique, quas assumenda accusantium officiis illum in? Asperiores earum fuga recusandae distinctio
-                enim quae eaque, hic molestias totam aliquid.
-                Deleniti ad repellat ea in harum minima mollitia pariatur, ratione autem cum maxime voluptatibus porro
-                deserunt consectetur labore, exercitationem at fugit facilis commodi. Fuga doloremque est dicta, facere
-                iure dolor!
+            <p><strong style="font-size: 30px;">Bokrecension</strong><br>
+                Kastanjemannen är en dansk bok, skriven av Søren Sveistrup. Boken publicerades först 2018 men översattes
+                senare och släpptes på svenska år 2019. Fyra år senare släpptes den som en serie på Netflix. För ett
+                halvår sedan läste jag Kastanjemannen och jag kan säga att det var en mycket bra bok. Sveistrup har fått
+                in mycket beskrivande text vilket gör att boken är inlevelserik. <br> Kastanjemannen handlar om en stad
+                i Danmark där det börjat ske olika mord. Polisen Naia Thulin får en ny partner som hon ska jobba med;
+                Mark Hess, vilket hon stör sig på mycket till en början. Tillsammans försöker de lösa morden och lista
+                ut vem som begått dem. Under tiden får de olika ledtrådar om vem som kommer att dö härnäst. Men det är
+                inte alltid den smartaste vägen att följa. Thulin och Hess får en del problem på vägen men tillsammans
+                går de igenom det. <br>
+                Efter att jag läste boken valde jag att även kolla på serien. Personligen tyckte jag inte om serien lika
+                mycket som boken. Många delar missades att ta med och jag tyckte inte att det var lika mycket
+                beskrivning som jag läste i boken, vilket i sig är ganska rimligt men jag tyckte att serien tappade
+                gnistan från boken. Jag rekommenderar starkt att läsa boken om du är intresserad av verklighets
+                inspirerande spänning. Kastanjemannen är en av de bästa böckerna jag har läst. Den är inlevelserik och
+                spännande genom hela boken. Ibland var det lite segt att ta sig igenom boken men det gjorde att
+                spänningen byggdes upp ännu mer. Jag ger Kastanjemannen 8/10 kastanjer i betyg 🌰<br>
+                <i style="font-size: 15px;">- Emme Karlsson, 2025</i>
             </p>
 
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque ea blanditiis, dolorum quibusdam at
@@ -143,13 +163,15 @@
                 sapiente possimus recusandae?
                 Officia iure voluptate hic quas perferendis ea a doloribus facere officiis doloremque voluptates
                 repudiandae est recusandae praesentium, blanditiis, inventore corrupti, quod deleniti dolor atque
-                asperiores. Dolorum assumenda autem esse blanditiis!
+                asperiores. Dolorum assumenda autem esse blanditiis! <br> <br>
                 <img src="https://www.onceuponachef.com/images/2022/11/baked-potatoes.jpg" alt="">
             </p>
         </div>
     </main>
     <footer>
-
+        <p style="font-weight: bold; font-size: 30px;">E-nyheter</p><br>
+        <p>Ella, Ejacob, Esimon, Elliot (SU23), Emme (AW24)</p>
+        <p style="font-size: 15px;"><i>Newsweek 2025</i></p>
     </footer>
 </body>
 

@@ -1,6 +1,6 @@
 :root{
     --ellasLila-: rgb(157, 78, 221);
-    --borderPurple-: rgb(244, 170, 255);
+    --alvarsBorder-: rgb(244, 170, 255);
 }
 
 *{
@@ -9,11 +9,23 @@
     box-sizing: border-box;
     width: 100%;
     font-family: monospace;
+    font-size: 20px;
+    color: white;
 }
+
+
 body{
     display: flex;
     flex-direction: column;
     background-color: rgb(90, 24, 154);
+}
+button{
+    background-color: var(--alvarsBorder-);
+    border-radius: 50px;
+    width: 10%;
+    height: 50px;
+    margin: 0 20px 40px 0;
+    align-self: flex-end;
 }
 header{
     background-color: rgb(36, 0, 70);
@@ -22,7 +34,7 @@ header{
     overflow: hidden;
     position: relative;
     height: 90px;
-    border-bottom: 3px solid var(--borderPurple--);
+    border-bottom: 3px solid var(--alvarsBorder-);
     color: white
 }
 .scroll-c{
@@ -31,6 +43,7 @@ header{
     white-space: nowrap;
 }
 h1{
+    font-size: 1.5rem;
     white-space: nowrap;
     padding: 0 40px;
     display: inline-block;
@@ -45,10 +58,9 @@ h1{
 
 .elliot p{
     width: 40%;
-    font-size: 20px;
     background-color: var(--ellasLila-);
     padding:20px;
-    border: 2px solid var(--borderPurple-);
+    border: 2px solid var(--alvarsBorder-);
     border-radius: 10px;
     text-align: center;
 }
@@ -69,13 +81,13 @@ video{
     margin-bottom: 40px;
 }
 .j-text{
+    text-align: left;
     width: 80%;
     display: flex;
     flex-direction: row;
-    padding: 20px;
     margin: 0 20px;
     background-color: var(--ellasLila-);
-    border: 2px solid var(--borderPurple-);
+    border: 2px solid var(--alvarsBorder-);
     border-radius: 10px;
 }
 
@@ -85,8 +97,14 @@ video{
     align-items: center;
     margin-bottom: 40px;
 }
+.ella img{
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 40px 0;
+}
 .ella-text{
-    text-align: center;
+    text-align: centxer;
     display: flex;
     flex-direction: row;
     margin: 0 40px;
@@ -95,8 +113,105 @@ video{
 }
 .ella-text p{
     width: 35%;
+    background-color: var(--ellasLila-);
+    border: 2px solid var(--alvarsBorder-);
+    border-radius: 10px;
+    padding: 20px;
 }
 .ella-text img{
     width: 40%;
 }
+.e-simon{
+    display: flex;
+    justify-content: space-evenly;
+}
+.e-simon p{
+    width: 40%;
+    background-color: var(--ellasLila-);
+    border: 2px solid var(--alvarsBorder-);
+    border-radius: 10px;
+    padding: 20px;
+}
+footer{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgb(36, 0, 70);
+}
 
+@media screen and (max-width: 480px) {
+    *{
+    width: 100%;
+    font-size: 12px;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        font-size: 15px;
+        width: 70px;
+        height: 40px;
+        align-self: flex-start;
+        margin-right: 10px;
+    }
+    header{
+        height: 80px;
+        width: 100%;
+    }
+    h1{
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    .elliot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .elliot p{
+        padding: 5px;
+        width: 85%;
+        margin-bottom: 20px;
+    }
+    #img-text{
+        font-size: 8px;
+    }
+    video{
+        height: 200px;
+        width: 80%;
+    }
+    .j-text{
+        display: flex;
+        flex-direction: column;
+        padding: 10px ;
+    }
+    .ella img{
+        width: 90%;
+    }
+    .ella-text{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .ella-text p, .ella-text img{
+        width: 80%;
+    }
+    .e-simon{
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+    .e-simon p{
+        width: 80%;
+        align-self: center;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .footer{
+        flex-wrap: nowrap;
+    }
+}

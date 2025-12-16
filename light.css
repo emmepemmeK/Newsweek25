@@ -1,0 +1,34 @@
+body.light-mode{
+    background-color: rgb(212, 162, 220);
+}
+body.light-mode div p{
+    background-color: var(--alvarsBorder-);
+    border: solid var(--ellasLila-);
+    color: black;
+}
+.light-mode header{
+    background-color: white;
+    border: solid var(--ellasLila-)
+}
+.light-mode h1{
+    color: rgb(36, 0, 70);
+}
+body.light-mode .j-text{
+    border: 0px solid var(--ellasLila-);
+    border-radius: 10px;
+}
+body.light-mode .j-text p{
+    border-radius: 10px;
+    padding: 20px;
+}
+body.light-mode footer{
+    background-color: white;
+    color: black;
+}
+body.light-mode footer p {
+    background-color: none;
+    color: black;
+}
+body.light-mode footer i {
+    color: black;
+}
