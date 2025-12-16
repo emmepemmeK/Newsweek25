@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-nyheter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="scroll-c" id="scroll">
+            <h1>E-nyheter - Erans kultur </h1>
+        </div>
+
+    </header>
+    <script>
+        const scroller = document.getElementById('scroll');
+        const text = scroller.innerHTML;
+        scroller.innerHTML = text.repeat(20);
+
+        const h1Width = scroller.querySelector('h1').offsetWidth;
+
+        let position = -h1Width;
+        const speed = 1;
+
+        function scroll() {
+            position += speed;
+
+            if (position >= 0) {
+                position = -h1Width;
+            }
+            scroller.style.transform = `translateX(${position}px)`;
+            requestAnimationFrame(scroll)
+        }
+        scroll();
+
+    </script>
+
+    <main>
+
+        <div class="elliot">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam illum magni, perspiciatis suscipit ea,
+                aliquid architecto asperiores similique tempora distinctio tenetur rerum delectus exercitationem
+                adipisci ex eos quis. Dolorem, voluptatum.
+                Maxime quod culpa exercitationem non enim iure adipisci corporis, incidunt obcaecati animi maiores
+                nostrum voluptatem magni odit assumenda omnis dignissimos totam libero in quam est! Modi ipsum fugit
+                dolorem id?
+                Sequi necessitatibus id voluptatem provident animi cupiditate itaque quae cumque rerum iure,
+                reprehenderit corporis facilis officia, nihil incidunt sunt officiis laboriosam dignissimos ex impedit
+                et? Error, itaque nostrum. Culpa, laudantium?
+                Ut amet, quibusdam omnis sapiente explicabo, corporis sequi, doloremque eius repellendus qui commodi
+                fuga repudiandae? Deleniti accusantium atque, ad ducimus, repellat dolor quia beatae nemo enim culpa
+                voluptatibus, modi vero?
+            </p>
+            <p id="img-text"><img src="https://www.onceuponachef.com/images/2022/11/baked-potatoes.jpg" alt=""> Lorem
+                ipsum, dolor sit
+                amet consectetur adipisicing elit. Dignissimos, excepturi.</p>
+        </div>
+
+        <div class="jacob">
+            <video controls>
+                <source src="">
+            </video>
+
+            <div class="j-text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores dicta praesentium quaerat in quae
+                    commodi, autem sunt corrupti fugit officia libero illo eveniet ipsa consequuntur, voluptatem porro
+                    voluptate quibusdam labore.
+                    Iste culpa quam cum error. Fuga, enim ipsa corrupti nostrum quasi laborum consequatur fugit nulla
+                    dolor asperiores repellendus dolore aperiam rem voluptate tenetur impedit totam sapiente ipsum.
+                    Itaque, vitae numquam?
+                    Sequi repudiandae minus illo praesentium, quisquam laudantium laboriosam expedita sit repellendus ex
+                    assumenda aperiam ea eos impedit nemo exercitationem et cum eius hic accusantium quam, obcaecati
+                    eveniet. Laboriosam, reprehenderit dolorem.
+                    Voluptate illum quia numquam, minima nulla, sapiente magni fugit sequi excepturi asperiores cum
+                    voluptatibus dignissimos. Laborum recusandae cumque doloremque natus eius repudiandae nemo placeat
+                    sapiente tempora, dolorem esse, autem minima!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni tempore distinctio consectetur
+                    pariatur accusamus rerum, ex ab quis qui eveniet molestias est cumque fugit beatae id enim!
+                    Corporis, tenetur veniam!
+                    Quo ut itaque nisi reprehenderit quae architecto nihil, provident sunt omnis numquam dolorem maiores
+                    ex excepturi voluptates? Assumenda voluptas labore saepe, rem suscipit libero, excepturi architecto
+                    debitis sunt ad fugiat.
+                    Iure illo impedit doloremque omnis dicta odit commodi deleniti cumque minima, ex illum nemo
+                    blanditiis nulla numquam modi saepe ea at laboriosam et delectus nostrum aut natus. Tenetur, minus
+                    architecto!
+                    Vel laboriosam itaque neque vero accusantium asperiores similique consequatur debitis soluta hic,
+                    eligendi saepe velit cum explicabo fugit delectus. Enim voluptas obcaecati voluptatem nulla, amet
+                    ipsam illo quos maxime iure.
+                </p>
+            </div>
+        </div>
+
+        <div class="ella">
+            <div class="ella-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, iure voluptatibus eligendi alias eaque
+                    quaerat eum sequi quos quisquam ex inventore ab id unde veniam corporis non nam assumenda nostrum!
+                    Maiores vel ullam officiis modi, nobis, est ea obcaecati neque sit quis nam temporibus debitis animi
+                    earum cumque cupiditate. Expedita architecto quis eaque deserunt voluptas dolorum ipsam perferendis
+                    molestiae cumque.
+                    Eaque exercitationem laboriosam modi voluptatibus. Magnam neque officia, possimus animi illum harum
+                    est
+                    quas ab blanditiis ipsum dolorum libero odit nisi placeat itaque doloremque aliquam exercitationem,
+                    facere, nihil iste minus.
+                    Libero accusantium illum non amet debitis, totam necessitatibus distinctio aut iure, minima
+                    mollitia,
+                    minus laboriosam! Dolorem totam autem hic consequatur mollitia ea quae, molestias et magnam atque,
+                    beatae consectetur doloribus. 
+                </p>
+                <img src="https://www.onceuponachef.com/images/2022/11/baked-potatoes.jpg" alt="">
+            </div>
+
+
+            <img src="https://www.onceuponachef.com/images/2022/11/baked-potatoes.jpg" alt="">
+        </div>
+
+        <div class="e-simon">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae in rerum corrupti, laboriosam
+                officia architecto eveniet quasi quaerat, temporibus incidunt excepturi, blanditiis ullam sit quam sunt
+                accusantium mollitia adipisci facere!
+                Est unde, commodi ipsum placeat quasi voluptatibus veritatis blanditiis alias aperiam mollitia adipisci
+                sed aliquid nobis, sit porro id accusantium aspernatur odio! Vero tenetur nesciunt non optio deleniti
+                laboriosam autem?
+                Eaque, quisquam provident. Consequatur veniam possimus, blanditiis odio sit obcaecati, placeat
+                similique, quas assumenda accusantium officiis illum in? Asperiores earum fuga recusandae distinctio
+                enim quae eaque, hic molestias totam aliquid.
+                Deleniti ad repellat ea in harum minima mollitia pariatur, ratione autem cum maxime voluptatibus porro
+                deserunt consectetur labore, exercitationem at fugit facilis commodi. Fuga doloremque est dicta, facere
+                iure dolor!
+            </p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque ea blanditiis, dolorum quibusdam at
+                et, expedita eveniet illum, officia praesentium voluptatum animi repudiandae laboriosam alias nihil.
+                Aperiam, itaque corporis. Labore!
+                Eligendi modi odit sequi ratione et ut vero, suscipit magni ea culpa eum beatae omnis? Quasi quos
+                corporis amet! Debitis libero ex veritatis voluptatem facilis nihil reprehenderit molestiae velit ullam.
+                Placeat possimus distinctio esse molestiae ea totam fuga alias cum labore odit voluptatem, hic dolor
+                explicabo perspiciatis! Libero non magni dignissimos repudiandae saepe, nostrum officiis qui, inventore
+                sapiente possimus recusandae?
+                Officia iure voluptate hic quas perferendis ea a doloribus facere officiis doloremque voluptates
+                repudiandae est recusandae praesentium, blanditiis, inventore corrupti, quod deleniti dolor atque
+                asperiores. Dolorum assumenda autem esse blanditiis!
+                <img src="https://www.onceuponachef.com/images/2022/11/baked-potatoes.jpg" alt="">
+            </p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
