@@ -36,3 +36,19 @@ body.light-mode footer i {
     background-color: var(--ellasLila-);
     border: solid var(--alvarsBorder-);
 }
+.light-mode .elliot-text{
+    background-color: var(--alvarsBorder-);
+    color: black;
+    border: solid var(--ellasLila-);
+}
+.light-mode h2{
+    color: black;
+}
+.light-mode strong{
+    color: black;
+}
+.light-mode .ella-img{
+    background-color: var(--alvarsBorder-);
+    color: black;
+    border: solid var(--ellasLila-);
+}

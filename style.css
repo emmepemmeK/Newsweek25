@@ -52,19 +52,26 @@ h1{
 
 .elliot{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 40px;
 }
-
-.elliot p{
-    width: 40%;
+.elliot-text{
+    width: 80%;
     background-color: var(--ellasLila-);
     padding:20px;
     border: 2px solid var(--alvarsBorder-);
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
+    color: white;
 }
+.elliot h2{
+    font-size: 24px;
+    color: white;
+}
+
+
 #img-text{
     font-size: 14px;
     font-style: italic;
@@ -98,14 +105,21 @@ video{
     align-items: center;
     margin-bottom: 40px;
 }
-.ella img{
+.ella-img{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 80%;
     margin: 40px 0;
+    background-color: var(--ellasLila-);
+    border: 2px solid var(--alvarsBorder-);
+    border-radius: 10px;
 }
 .ella-text{
-    text-align: centxer;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
     display: flex;
     flex-direction: column;
     margin: 0 40px;
@@ -198,6 +212,10 @@ footer{
     }
     .ella img{
         width: 90%;
+    }
+    .ella-img{
+        display: flex;
+        flex-direction: column;
     }
     .ella-text{
         display: flex;
